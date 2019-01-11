@@ -1,0 +1,33 @@
+.vuti-datepicker-main{
+  position: relative;
+  width: 100%;
+  height: 50vw;
+  background-color: var(--color-bg-t2);
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+.vuti-datepicker-content{
+  flex: 1;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.vuti-datepicker-item{
+  height: 9vw;
+  line-height: 9vw;
+  text-align: center;
+  font-size: var(--size-font-t2);
+}
+.vuti-datepicker-window{
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  top: 36vw;
+  background-color: var(--color-divide);
+  transform: translateY(.5);
+  -webkit-transform: translateY(.5);
+  -moz-transform: translateY(.5);
+  -ms-transform: translateY(.5);
+  -o-transform: translateY(.5);
+}

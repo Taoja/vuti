@@ -1,0 +1,73 @@
+.vuti-header{
+  width: 100vw;
+  height: var(--size-cell-height);
+  display: flex;
+  background-color: var(--color-bg-t2);
+  box-shadow: var(--shadow-nav);
+  padding: 0 calc(var(--size-cell-height)/4);
+  box-sizing: border-box;
+  position: relative;
+}
+.vuti-header-right{
+  min-width: calc(var(--size-cell-height)/2);
+  display: flex;
+}
+.vuti-header-btns{
+  min-width: calc(var(--size-cell-height)/2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1.2vw;
+}
+.vuti-header-btns:last-child{
+  margin-right: 0;
+}
+.vuti-header-center{
+  flex: 1;
+  font-size: var(--size-font-t1);
+  color: var(--color-font-t1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.vuti-header-btn{
+  font-size: var(--size-font-t3);
+  color: var(--color-t1);
+  position: relative;
+}
+.vuti-header-btn[prevent]{
+  opacity: .5;
+}
+
+.vuti-page[load] .vuti-header::after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--load-bg);
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+.vuti-page[load] .vuti-header-btn::after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--load-icon);
+  left: 0;
+  top: 0;
+  z-index: 2;
+}
+
+.vuti-page[load] .vuti-header-center::after{
+  content: "";
+  position: absolute;
+  width: 26.67vw;
+  height: 5.33vw;
+  left: calc(50% - 26.67vw/2);
+  top: calc(50% - 5.33vw/2);
+  background-color: var(--load-txt);
+  z-index: 2;
+}

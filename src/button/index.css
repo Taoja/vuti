@@ -1,0 +1,83 @@
+.vuti-button[size=normal] {
+  width: 92vw;
+  height: var(--size-cell-height);
+  font-size: var(--size-font-t1);
+}
+.vuti-button[size=big]{
+  width: 100vw;
+  height: 13.333vw;
+  font-size: var(--size-font-t1);
+}
+.vuti-button[size=small]{
+  width: 16vw;
+  height: 8.533vw;
+  font-size: var(--size-font-t4);
+}
+
+.vuti-button[scheme=default]{
+  --main-color: var(--color-t1);
+  --main-color-anti: var(--color-bg-t2);
+}
+
+.vuti-button[disabled],.vuti-button[press]{
+  opacity: .5;
+}
+
+.vuti-button{
+  position: relative;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2px;
+  background-color: var(--main-color);
+  color: var(--main-color-anti);
+  border: 1px solid var(--main-color);
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  box-sizing: border-box;
+}
+.vuti-button[plain]{
+  background-color: var(--main-color-anti);
+  color: var(--main-color);
+}
+
+.vuti-page[load] .vuti-button::after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--load-bg);
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.vuti-page[load] .vuti-button{
+  border: 1px solid var(--load-bg);
+  background-color: var(--load-bg);
+}
+
+.vuti-page[load] .vuti-button[size=normal]::before,.vuti-page[load] .vuti-button[size=big]::before{
+  content: "";
+  position: absolute;
+  width: 26.67vw;
+  height: 5.33vw;
+  left: calc(50% - 26.67vw/2);
+  top: calc(50% - 5.33vw/2);
+  background-color: var(--load-txt);
+  z-index: 2;
+}
+
+.vuti-page[load] .vuti-button[size=small]::before{
+  content: "";
+  position: absolute;
+  width: 10.667vw;
+  height: 4vw;
+  left: calc(50% - 10.67vw/2);
+  top: calc(50% - 4vw/2);
+  background-color: var(--load-txt);
+  z-index: 2;
+}

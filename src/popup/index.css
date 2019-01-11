@@ -1,0 +1,85 @@
+.vuti-popup{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: calc(81vw + var(--size-cell-height));
+  background-color: var(--color-bg-t2);
+  z-index: 101;
+  overflow: hidden;
+}
+.vuti-popup[auto-height]{
+  height: auto;
+}
+.vutiSlideInDown{
+  animation: vutiSlideInDown 200ms linear;
+  -webkit-animation: vutiSlideInDown 200ms linear;
+}
+@keyframes vutiSlideInDown {
+  from {
+    transform: translateY(100%)  ;
+    -webkit-transform: translateY(100%)  ;
+    -moz-transform: translateY(100%)  ;
+    -ms-transform: translateY(100%)  ;
+    -o-transform: translateY(100%)  ;
+  }
+  to{
+    transform: translateY(0%);
+    -webkit-transform: translateY(0%);
+    -moz-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    -o-transform: translateY(0%);
+  }
+}
+@-webkit-keyframes vutiSlideInDown {
+  from {
+    transform: translateY(100%)  ;
+    -webkit-transform: translateY(100%)  ;
+    -moz-transform: translateY(100%)  ;
+    -ms-transform: translateY(100%)  ;
+    -o-transform: translateY(100%)  ;
+  }
+  to{
+    transform: translateY(0%);
+    -webkit-transform: translateY(0%);
+    -moz-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    -o-transform: translateY(0%);
+  }
+}
+.vutiSlideOutDown{
+  animation: vutiSlideOutDown 200ms linear;
+  -webkit-animation: vutiSlideOutDown 200ms linear;
+}
+@keyframes vutiSlideOutDown {
+  from {
+    transform: translateY(0%)  ;
+    -webkit-transform: translateY(0%)  ;
+    -moz-transform: translateY(0%)  ;
+    -ms-transform: translateY(0%)  ;
+    -o-transform: translateY(0%)  ;
+  }
+  to{
+    transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    -o-transform: translateY(100%);
+  }
+}
+@-webkit-keyframes vutiSlideOutDown {
+  from {
+    transform: translateY(0%)  ;
+    -webkit-transform: translateY(0%)  ;
+    -moz-transform: translateY(0%)  ;
+    -ms-transform: translateY(0%)  ;
+    -o-transform: translateY(0%)  ;
+  }
+  to{
+    transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    -o-transform: translateY(100%);
+  }
+}

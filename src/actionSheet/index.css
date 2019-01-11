@@ -1,0 +1,24 @@
+.vuti-as{
+  background-color: var(--color-bg-t1);
+}
+.vuti-as-btn,.vuti-as-cancel{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: var(--size-cell-height);
+  font-size: var(--size-font-t3);
+  background-color: var(--color-bg-t2);
+}
+.vuti-as-btn{
+  color: var(--color-font-t1);
+}
+.vuti-as-cancel{
+  color: var(--color-t1);
+  margin-top: var(--size-margin-t5);
+}
+.vuti-as-title{
+  background-color: var(--color-bg-t2);
+  color: var(--color-t2);
+  font-size: var(--size-font-t3);
+  padding: var(--size-margin-t1) var(--size-margin-t3);
+}

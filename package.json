@@ -1,0 +1,11 @@
+{
+  "name": "vuti",
+  "version": "1.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "黄武韬（346792184@qq.com）",
+  "license": "ISC"
+}

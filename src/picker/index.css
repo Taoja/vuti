@@ -1,0 +1,73 @@
+.vuti-picker-main{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-bg-t2);
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+.vuti-picker-main::before{
+  position: absolute;
+  content: "";
+  top: calc(50% - var(--size-picker-height)/2);
+  width: 100%;
+  height: 1px;
+  background-color: var(--color-divide);
+  transform: scaleY(.5);
+  -webkit-transform: scaleY(.5);
+  -moz-transform: scaleY(.5);
+  -ms-transform: scaleY(.5);
+  -o-transform: scaleY(.5);
+}
+.vuti-picker-main::after{
+  position: absolute;
+  content: "";
+  bottom: calc(50% - var(--size-picker-height)/2);
+  width: 100%;
+  height: 1px;
+  background-color: var(--color-divide);
+  transform: scaleY(.5);
+  -webkit-transform: scaleY(.5);
+  -moz-transform: scaleY(.5);
+  -ms-transform: scaleY(.5);
+  -o-transform: scaleY(.5);
+}
+.vuti-picker-content{
+  flex: 1;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.vuti-picker-content::before{
+  content: "";
+  background: linear-gradient(rgba(255,255,255, 1), rgba(255,255,255, 0.5));
+  background: -webkit-linear-gradient(rgba(255,255,255, 1), rgba(255,255,255, 0.5));
+  background: -o-linear-gradient(rgba(255,255,255, 1), rgba(255,255,255, 0.5));
+  background: -moz-linear-gradient(rgba(255,255,255, 1), rgba(255,255,255, 0.5));
+  width: 100%;
+  height: calc(50% - var(--size-picker-height)/2);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+}
+.vuti-picker-content::after{
+  content: "";
+  background: linear-gradient(rgba(255,255,255, .5), rgba(255,255,255, 1));
+  background: -webkit-linear-gradient(rgba(255,255,255, .5), rgba(255,255,255, 1));
+  background: -o-linear-gradient(rgba(255,255,255, .5), rgba(255,255,255, 1));
+  background: -moz-linear-gradient(rgba(255,255,255, .5), rgba(255,255,255, 1));
+  width: 100%;
+  height: calc(50% - var(--size-picker-height)/2);
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  z-index: 1;
+}
+.vuti-picker-item{
+  height: var(--size-picker-height);
+  line-height: var(--size-picker-height);
+  text-align: center;
+  font-size: var(--size-font-t2);
+}

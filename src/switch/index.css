@@ -1,0 +1,41 @@
+.vuti-switch{
+  width: var(--size-cell-height);
+  height: calc(var(--size-cell-height)/2);
+  background-color: #eaeaea;
+  border-radius: 999px;
+  -webkit-border-radius: 999px;
+  -moz-border-radius: 999px;
+  -ms-border-radius: 999px;
+  -o-border-radius: 999px;
+  position: relative;
+  transition: all .2s;
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  -ms-transition: all .2s;
+  -o-transition: all .2s;
+}
+.vuti-switch-button{
+  position: absolute;
+  width: calc(var(--size-cell-height)/2 - 2px);
+  height: calc(var(--size-cell-height)/2 - 2px);
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  background-color: white;
+  margin: 1px;
+  box-shadow:0px 2px 2px 0px rgba(0, 0, 0, 0.2);
+  left: 1px;
+  transition: left .2s;
+  -webkit-transition: left .2s;
+  -moz-transition: left .2s;
+  -ms-transition: left .2s;
+  -o-transition: left .2s;
+}
+.vuti-switch-open{
+  background-color: #76D05E;
+}
+.vuti-switch-open .vuti-switch-button{
+  left: 50%;
+}

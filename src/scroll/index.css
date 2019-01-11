@@ -1,0 +1,28 @@
+.vuti-scroll{
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.vuti-scroll-wrapper{
+  position: relative;
+}
+.vuti-scroll-pullDown{
+  position: absolute;
+  top: 0px;
+  transform: translateY(-100%);
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  width: 100%;
+  text-align: center;
+}
+.vuti-scroll-pullUp{
+  width: 100%;
+  text-align: center;
+}
+.vuti-scroll-svg{
+  width: 30px;
+  height: 30px;
+}

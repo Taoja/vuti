@@ -1,0 +1,26 @@
+.vuti-page{
+  display: flex;
+  flex-flow: column;
+  background-color: var(--color-bg-t1);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  overflow: hidden;
+}
+.vuti-page[load]::after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 5;
+}
+
+.vuti-page-middle{
+  flex: 1;
+  overflow: auto;
+  position: relative;
+}
