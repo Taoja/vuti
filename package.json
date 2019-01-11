@@ -1,11 +1,34 @@
 {
   "name": "vuti",
   "version": "1.0.1",
-  "description": "",
+  "description": "高扩展性前端UI框架",
+  "keywords": [
+    "vuti",
+    "vue",
+    "UI",
+    "web ui",
+    "webui",
+    "datepicker",
+    "header"
+  ],
   "main": "index.js",
+  "bugs": {
+    "url": "https://github.com/Taoja/vuti/issues",
+    "email": "346792184@qq.com"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "黄武韬（346792184@qq.com）",
+  "author": {
+    "name": "黄武韬",
+    "email": "346792184@qq.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Taoja/vuti"
+  },
+  "engines": {
+    "node": ">=6.11.5"
+  },
   "license": "ISC"
 }
