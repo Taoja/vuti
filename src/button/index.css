@@ -2,6 +2,7 @@
   width: 92vw;
   height: var(--size-cell-height);
   font-size: var(--size-font-t1);
+  margin: auto;
 }
 .vuti-button[size=big]{
   width: 100vw;
@@ -9,8 +10,8 @@
   font-size: var(--size-font-t1);
 }
 .vuti-button[size=small]{
-  width: 16vw;
-  height: 8.533vw;
+  display: inline-block;
+  padding: 1.467vw 2.67vw;
   font-size: var(--size-font-t4);
 }
 

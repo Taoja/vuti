@@ -1,0 +1,17 @@
+.vuti-group-title{
+  color: #666;
+  font-size: var(--size-font-t3);
+  margin: 1.867vw 0px 1.867vw var(--size-margin-t2);
+  display: inline-block;
+  position: relative;
+}
+.vuti-page[load] .vuti-group-title::after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--load-bg);
+  left: 0;
+  top: 0;
+  z-index: 1;
+}

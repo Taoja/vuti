@@ -27,6 +27,7 @@ import tActionsheet from './src/actionSheet/index.js'
 import tToast from './src/toast/index.js'
 import tCellInput from './src/cellInput/index.js'
 import tSwitch from './src/switch/index.js'
+import tGroup from './src/group/index.js'
 
 export {
   tButton,
@@ -43,5 +44,6 @@ export {
   plugins,
   tToast,
   tCellInput,
-  tSwitch
+  tSwitch,
+  tGroup
 }
