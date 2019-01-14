@@ -1,4 +1,4 @@
-.vuti-switch{
+.vuti-switch[type='normal']{
   width: var(--size-cell-height);
   height: calc(var(--size-cell-height)/2);
   background-color: #eaeaea;
@@ -17,14 +17,14 @@
 .vuti-page[load] .vuti-switch::after{
   content: "";
   position: absolute;
-  width: 100%;
-  height: 100%;
+  width: calc(100% + 2px);
+  height: calc(100% + 2px);
   background-color: var(--load-icon);
-  left: 0;
-  top: 0;
+  left: -1px;
+  top: -1px;
   z-index: 1;
 }
-.vuti-switch-button{
+.vuti-switch[type='normal'] .vuti-switch-button{
   position: absolute;
   width: calc(var(--size-cell-height)/2 - 2px);
   height: calc(var(--size-cell-height)/2 - 2px);
@@ -43,9 +43,107 @@
   -ms-transition: left .2s;
   -o-transition: left .2s;
 }
-.vuti-switch-open{
+.vuti-switch-open[type='normal']{
   background-color: #76D05E;
 }
-.vuti-switch-open .vuti-switch-button{
+.vuti-switch-open[type='normal'] .vuti-switch-button{
   left: 50%;
+}
+
+.vuti-switch[type='radio'] {
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  border: 1px solid var(--color-t1);
+  position: relative;
+}
+.vuti-switch[type='radio'] .vuti-switch-button{
+  width: 0px;
+  height: 0px;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  background-color: var(--color-t1);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  transition: all .2s;
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  -ms-transition: all .2s;
+  -o-transition: all .2s;
+}
+.vuti-switch-open[type='radio'] .vuti-switch-button {
+  width: 8px;
+  height: 8px;
+}
+
+.vuti-switch[type='checkbox'] {
+  width: 12px;
+  height: 12px;
+  border: 1px solid var(--color-t1);
+  position: relative;
+}
+.vuti-switch[type='checkbox'] .vuti-switch-button{
+  width: 0px;
+  height: 1px;
+  background-color: var(--color-t1);
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  position: absolute;
+  left: calc(12px/6);
+  top: calc(50% + 12px/12);
+  transition: all .1s .1s;
+  -webkit-transition: all .1s .1s;
+  -moz-transition: all .1s .1s;
+  -ms-transition: all .1s .1s;
+  -o-transition: all .1s .1s;
+}
+.vuti-switch-open[type='checkbox'] .vuti-switch-button{
+  width: calc(12px/3);
+  transition: all .1s;
+  -webkit-transition: all .1s;
+  -moz-transition: all .1s;
+  -ms-transition: all .1s;
+  -o-transition: all .1s;
+}
+.vuti-switch[type='checkbox']::before{
+  content: "";
+  width: 0px;
+  height: 1px;
+  left: calc(50% - calc(12px/6));
+  top: calc(12px/3 + 12px/12);
+  background-color: var(--color-t1);
+  position: absolute;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transition: all .1s;
+  -webkit-transition: all .1s;
+  -moz-transition: all .1s;
+  -ms-transition: all .1s;
+  -o-transition: all .1s;
+}
+.vuti-switch-open[type='checkbox']::before{
+  width: calc(12px*2/3);
+  transition: all .1s .1s;
+  -webkit-transition: all .1s .1s;
+  -moz-transition: all .1s .1s;
+  -ms-transition: all .1s .1s;
+  -o-transition: all .1s .1s;
 }

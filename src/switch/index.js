@@ -12,6 +12,10 @@ const component = {
     value: {
       type: Boolean,
       default: false
+    },
+    type: {
+      type: String,
+      default: 'normal'
     }
   },
   methods: {
@@ -21,7 +25,7 @@ const component = {
     }
   },
   template: `
-    <div class="vuti-switch" :class="{'vuti-switch-open': value}" @click="click">
+    <div class="vuti vuti-switch" :type="type" :class="{'vuti-switch-open': value}" @click="click">
       <div class="vuti-switch-button"></div>
     </div>
   `

@@ -1,17 +1,17 @@
 .vuti-button[size=normal] {
-  width: 92vw;
+  width: 92vmin;
   height: var(--size-cell-height);
   font-size: var(--size-font-t1);
   margin: auto;
 }
 .vuti-button[size=big]{
-  width: 100vw;
-  height: 13.333vw;
+  width: 100vmin;
+  height: 13.333vmin;
   font-size: var(--size-font-t1);
 }
 .vuti-button[size=small]{
   display: inline-block;
-  padding: 1.467vw 2.67vw;
+  padding: 1.467vw 2.67vmin;
   font-size: var(--size-font-t4);
 }
 
@@ -64,8 +64,8 @@
 .vuti-page[load] .vuti-button[size=normal]::before,.vuti-page[load] .vuti-button[size=big]::before{
   content: "";
   position: absolute;
-  width: 26.67vw;
-  height: 5.33vw;
+  width: 26.67vmin;
+  height: 5.33vmin;
   left: calc(50% - 26.67vw/2);
   top: calc(50% - 5.33vw/2);
   background-color: var(--load-txt);
@@ -75,8 +75,8 @@
 .vuti-page[load] .vuti-button[size=small]::before{
   content: "";
   position: absolute;
-  width: 10.667vw;
-  height: 4vw;
+  width: 10.667vmin;
+  height: 4vmin;
   left: calc(50% - 10.67vw/2);
   top: calc(50% - 4vw/2);
   background-color: var(--load-txt);

@@ -1,9 +1,17 @@
-.vuti{
+html{
+  /** 
+  * 尺寸比例
+  */
+  --size: 1;
+}
+
+body{  
   /** 
   * 主色及副色
   */
   --color-t1: #0096ff;
   --color-t2: #999999;
+  --color-positive: #13ce66;
   --color-error: #ff4d1d;
   --color-warn: #ffa71d;
   /** 
@@ -11,6 +19,7 @@
   */
   --color-font-t1: #333333;
   --color-font-t2: #666666;
+  --color-font-t3: #cccccc;
   /** 
   * 背景主色及反色
   */
@@ -25,23 +34,23 @@
   * 字体
   */
   /*导航标题*/
-  --size-font-t1: 4.8vw;
+  --size-font-t1: calc(4.8vmin/var(--size));
   /*列表标题*/
-  --size-font-t2: 4.267vw;
+  --size-font-t2: calc(4.267vmin/var(--size));
   /*正文*/
-  --size-font-t3: 3.734vw;
+  --size-font-t3: calc(3.734vmin/var(--size));
   /*副标题，辅助文字*/
-  --size-font-t4: 3.2vw;
+  --size-font-t4: calc(3.2vmin/var(--size));
   /*副标题，辅助文字*/
-  --size-font-t5: 2.934vw;
+  --size-font-t5: calc(2.934vmin/var(--size));
   /*底部标签栏文字*/
-  --size-font-t6: 2.667vw;
-  --size-font-t7: 2.4vw;
+  --size-font-t6: calc(2.667vmin/var(--size));
+  --size-font-t7: calc(2.4vmin/var(--size));
 
   /** 
   * 导航栏、cell高度
   */
-  --size-cell-height: 11.734vw;
+  --size-cell-height: calc(11.734vmin/var(--size));
 
   /** 
   * 导航栏阴影
@@ -55,90 +64,19 @@
   --load-txt: #f1f1f1;
   --load-icon: #e5f4ff;
   
-  --size-picker-height: 9vw;
+  --size-picker-height: calc(9vmin/var(--size));
 
   /** 
   * 边距
   */
   /* 标题与输入框间隔 */
-  --size-margin-t1: 5.333vw;
+  --size-margin-t1: calc(5.333vmin/var(--size));
   /* 页面侧边距，正文纵向边距 */
-  --size-margin-t2: 4vw;
+  --size-margin-t2: calc(4vmin/var(--size));
   /* 标题纵向边距 */
-  --size-margin-t3: 3.733vw;
-  --size-margin-t4: 3.2vw;
+  --size-margin-t3: calc(3.734vmin/var(--size));
+  --size-margin-t4: calc(3.2vmin/var(--size));
   /* 块间距 */
-  --size-margin-t5: 2.667vw;
-  --size-margin-t6: 2.4vw;
-}
-.vuti{
-  line-height: 5.6vw;
-}
-.vuti-border-top{
-  position: relative;
-}
-.vuti-border-top::before{
-  content: "";
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  height: 1px;
-  background-color: var(--color-divide);
-  transform: scaleY(.5);
-  -webkit-transform: scaleY(.5);
-  -moz-transform: scaleY(.5);
-  -ms-transform: scaleY(.5);
-  -o-transform: scaleY(.5);
-}
-.vuti-border-bottom{
-  position: relative;
-}
-.vuti-border-bottom::after{
-  content: "";
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-  width: 100%;
-  height: 1px;
-  background-color: var(--color-divide);
-  transform: scaleY(.5);
-  -webkit-transform: scaleY(.5);
-  -moz-transform: scaleY(.5);
-  -ms-transform: scaleY(.5);
-  -o-transform: scaleY(.5);
-}
-
-input,
-button,
-textarea,
-select {
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: inherit;
-  border: 0;
-  background: 0;
-  -webkit-appearance: none;
-  outline: 0;
-}
-
-a,
-button,
-input,
-select,
-textarea,
-a:focus,
-button:focus,
-input:focus,
-select:focus,
-textarea:focus,
-[onclick] {
-  outline: 0;
-  -webkit-tap-highlight-color: rgba(255, 255, 255, 0)
-}
-input{
-  padding: 0;
-}
-::-webkit-input-placeholder {
-  color: #ccc;
+  --size-margin-t5: calc(2.667vmin/var(--size));
+  --size-margin-t6: calc(2.4vmin/var(--size));
 }

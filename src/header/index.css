@@ -1,5 +1,5 @@
 .vuti-header{
-  width: 100vw;
+  width: 100vmin;
   height: var(--size-cell-height);
   display: flex;
   background-color: var(--color-bg-t2);
@@ -17,7 +17,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 1.2vw;
+  margin-right: 1.2vmin;
 }
 .vuti-header-btns:last-child{
   margin-right: 0;
@@ -64,8 +64,8 @@
 .vuti-page[load] .vuti-header-center::after{
   content: "";
   position: absolute;
-  width: 26.67vw;
-  height: 5.33vw;
+  width: 26.67vmin;
+  height: 5.33vmin;
   left: calc(50% - 26.67vw/2);
   top: calc(50% - 5.33vw/2);
   background-color: var(--load-txt);

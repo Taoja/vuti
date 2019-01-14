@@ -6,19 +6,19 @@
   bottom: 0;
   margin: auto;
   z-index: 101;
-  min-width: 26.67vw;
-  max-width: 50.67vw;
+  min-width: 26.67vmin;
+  max-width: 50.67vmin;
   transform: translateX(-50%);
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   -o-transform: translateX(-50%);
   background-color: rgba(0,0,0,0.5);
-  border-radius: 1.33vw;
-  -webkit-border-radius: 1.33vw;
-  -moz-border-radius: 1.33vw;
-  -ms-border-radius: 1.33vw;
-  -o-border-radius: 1.33vw;
+  border-radius: 1.33vmin;
+  -webkit-border-radius: 1.33vmin;
+  -moz-border-radius: 1.33vmin;
+  -ms-border-radius: 1.33vmin;
+  -o-border-radius: 1.33vmin;
   text-align: center;
 }
 .vuti-toast-text{
@@ -27,7 +27,7 @@
   color: var(--color-bg-t2);
 }
 .vuti-toast-image{
-  width: 11.73vw;
+  width: 11.73vmin;
   margin: var(--size-margin-t3) auto 0px;
 }
 .vuti-toast-image>img{
@@ -35,7 +35,7 @@
   display: block;
 }
 .vuti-toast-icon{
-  font-size: 11.734vw;
+  font-size: 11.734vmin;
   margin: var(--size-margin-t3) auto 0px;
   color: var(--color-bg-t2);
   line-height: 1;

@@ -1,5 +1,5 @@
 .vuti-dialog{
-  width: 74.667vw;
+  width: 74.667vmin;
   background-color: var(--color-bg-t2);
   position: fixed;
   display: table;
@@ -17,7 +17,7 @@
   box-shadow: var(--shadow-nav);
 }
 .vuti-dialog-image{
-  width: 32vw;
+  width: 32vmin;
   margin: 6.4vw auto;
 }
 
@@ -33,12 +33,12 @@
   text-align: center;
 }
 .vuti-dialog-text{
-  margin: var(--size-font-t4) 8vw 5.34vw;
+  margin: var(--size-font-t4) 8vw 5.34vmin;
   color: var(--color-font-t1);
   font-size: var(--size-font-t3);
 }
 .vuti-dialog-buttons{
-  height: 10.667vw;
+  height: 10.667vmin;
   display: flex;
   justify-content: space-between;
   position: relative;

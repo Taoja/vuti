@@ -12,7 +12,7 @@
   position: absolute;
   top: 0px;
   right: 0px;
-  width: 96vw;
+  width: 96vmin;
   height: 1px;
   background-color: var(--color-divide);
   transform: scaleY(.5);
@@ -47,7 +47,7 @@
   content: "";
   position: absolute;
   width: 100%;
-  min-width: 20vw;
+  min-width: 20vmin;
   height: 100%;
   background-color: var(--load-txt);
   left: 0;
@@ -59,18 +59,18 @@
   color: var(--color-t2);
 }
 .vuti-cell-icon{
-  font-size: 6.4vw;
+  font-size: 6.4vmin;
   margin-right: var(--size-margin-t2);
   line-height: 1;
 }
 .vuti-page[load] .vuti-cell-isLink{
-  margin-right: 5vw;
+  margin-right: 5vmin;
 }
 .vuti-page[load] .vuti-cell-isLink::after{
   content: "";
   position: absolute;
   width: 100%;
-  min-width: 5vw;
+  min-width: 5vmin;
   height: 100%;
   background-color: var(--load-icon);
   left: 0;
@@ -78,7 +78,7 @@
   z-index: 1;
 }
 .vuti-cell-isLink{
-  width: 2.134vw;
+  width: 2.134vmin;
   margin-left: var(--size-margin-t3);
   position: relative;
 }

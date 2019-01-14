@@ -1,4 +1,5 @@
 import './common/css/var.css'
+import './common/css/mixin.css'
 import './common/css/iconfont.css'
 window.$mask = []
 
