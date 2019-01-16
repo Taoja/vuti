@@ -20,7 +20,7 @@ import './index.css'
  * @emits keydown
  * @emits keyup
  * @example
- * <t-cell is-link title="标题标题" tip="说明文字/描述信息" :icon="{name: 'icon-QRcode',color: 'red'}">内容</t-cell>
+ * <t-cell-input title="标题标题" tip="说明文字/描述信息" :icon="{name: 'icon-QRcode',color: 'red'}">内容</t-cell-input>
  */
 const component = {
   data() {
@@ -93,7 +93,9 @@ const component = {
       :tips="tips"
       :icon="icon"
     >
+      <slot name="left" slot="left"></slot>
       <input v-model="value" :maxlength="maxlength" :readonly="readonly" :type="type" class="vuti-cellInput-input" :placeholder="placeholder" @focus="focus" @blur="blur" @keyup="keyup" @keydown="keydown" @click="click" @focus="focus" @input="input" @change="change" type="text"/>
+      <slot name="right" slot="right"></slot>
     </t-cell>
   `,
   components: {

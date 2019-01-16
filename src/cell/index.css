@@ -12,7 +12,7 @@
   position: absolute;
   top: 0px;
   right: 0px;
-  width: 96vmin;
+  width: 96%;
   height: 1px;
   background-color: var(--color-divide);
   transform: scaleY(.5);
@@ -47,7 +47,7 @@
   content: "";
   position: absolute;
   width: 100%;
-  min-width: 20vmin;
+  min-width: calc(20vmin/var(--size));
   height: 100%;
   background-color: var(--load-txt);
   left: 0;
@@ -59,18 +59,18 @@
   color: var(--color-t2);
 }
 .vuti-cell-icon{
-  font-size: 6.4vmin;
+  font-size: calc(6.4vmin/var(--size));
   margin-right: var(--size-margin-t2);
   line-height: 1;
 }
 .vuti-page[load] .vuti-cell-isLink{
-  margin-right: 5vmin;
+  margin-right: calc(5vmin/var(--size));
 }
 .vuti-page[load] .vuti-cell-isLink::after{
   content: "";
   position: absolute;
   width: 100%;
-  min-width: 5vmin;
+  min-width: calc(5vmin/var(--size));
   height: 100%;
   background-color: var(--load-icon);
   left: 0;
@@ -78,7 +78,7 @@
   z-index: 1;
 }
 .vuti-cell-isLink{
-  width: 2.134vmin;
+  width: calc(2.134vmin/var(--size));
   margin-left: var(--size-margin-t3);
   position: relative;
 }
