@@ -1,23 +1,26 @@
 .vuti-button[size=normal] {
-  width: 92vmin;
   height: var(--size-cell-height);
   font-size: var(--size-font-t1);
-  margin: auto;
+  margin: auto calc(4vmin/var(--size));
 }
 .vuti-button[size=big]{
-  width: 100vmin;
-  height: 13.333vmin;
+  width: 100%;
+  height: calc(13.333vmin/var(--size));
   font-size: var(--size-font-t1);
 }
 .vuti-button[size=small]{
   display: inline-block;
-  padding: 1.467vw 2.67vmin;
+  padding: calc(1.467vmin/var(--size)) calc(2.67vmin/var(--size));
   font-size: var(--size-font-t4);
 }
 
 .vuti-button[scheme=default]{
   --main-color: var(--color-t1);
   --main-color-anti: var(--color-bg-t2);
+}
+
+.vuti-button[disabled]{
+  cursor: not-allowed;
 }
 
 .vuti-button[disabled],.vuti-button[press]{
@@ -39,6 +42,7 @@
   -ms-border-radius: 2px;
   -o-border-radius: 2px;
   box-sizing: border-box;
+  cursor: pointer;
 }
 .vuti-button[plain]{
   background-color: var(--main-color-anti);
@@ -66,8 +70,8 @@
   position: absolute;
   width: 26.67vmin;
   height: 5.33vmin;
-  left: calc(50% - 26.67vw/2);
-  top: calc(50% - 5.33vw/2);
+  left: calc(50% - 26.67vmin/2);
+  top: calc(50% - 5.33vmin/2);
   background-color: var(--load-txt);
   z-index: 2;
 }
@@ -77,8 +81,8 @@
   position: absolute;
   width: 10.667vmin;
   height: 4vmin;
-  left: calc(50% - 10.67vw/2);
-  top: calc(50% - 4vw/2);
+  left: calc(50% - 10.67vmin/2);
+  top: calc(50% - 4vmin/2);
   background-color: var(--load-txt);
   z-index: 2;
 }

@@ -54,7 +54,8 @@ const component = {
     }
   },
   mounted() {
-    this.cellHeight = window.innerWidth*0.09
+    this.cellHeight = this.$refs.item[0].clientHeight
+    console.log(this.cellHeight)
     var bodyHeight = this.$refs.content.$el.clientHeight
     this.height = (bodyHeight - this.cellHeight)/2
     this.$refs.content.scroll.scrollTo(0, -this.value*this.cellHeight)

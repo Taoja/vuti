@@ -1,5 +1,5 @@
 .vuti-dialog{
-  width: 74.667vmin;
+  width: calc(74.667vmin/var(--size));
   background-color: var(--color-bg-t2);
   position: fixed;
   display: table;
@@ -17,8 +17,8 @@
   box-shadow: var(--shadow-nav);
 }
 .vuti-dialog-image{
-  width: 32vmin;
-  margin: 6.4vw auto;
+  width: calc(32vmin/var(--size));
+  margin: calc(6.4vw/var(--size)) auto;
 }
 
 .vuti-dialog-image>img{
@@ -26,19 +26,19 @@
   width: 100%;
 }
 .vuti-dialog-title{
-  margin: 6.6667vw 8vw 0px;
+  margin: calc(6.6667vw/var(--size)) calc(8vw/var(--size)) 0px;
   font-weight: bold;
   color: var(--color-font-t1);
   font-size: var(--size-font-t2);
   text-align: center;
 }
 .vuti-dialog-text{
-  margin: var(--size-font-t4) 8vw 5.34vmin;
+  margin: var(--size-font-t4) calc(8vw/var(--size)) calc(5.34vmin/var(--size));
   color: var(--color-font-t1);
   font-size: var(--size-font-t3);
 }
 .vuti-dialog-buttons{
-  height: 10.667vmin;
+  height: calc(10.667vmin/var(--size));
   display: flex;
   justify-content: space-between;
   position: relative;
@@ -65,6 +65,6 @@
   align-items: center;
   font-size: var(--size-font-t2);
 }
-.vuti-dialog-button-primary{
+.vuti-dialog-button[scheme=primary]{
   color: var(--color-t1);
 }

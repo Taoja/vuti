@@ -14,20 +14,20 @@ import tMask from '../mask/index.js'
  *  @member {Object}
  *    {
  *      text 按钮文案,
- *      style 按钮风格, primary为主色风格
+ *      scheme 按钮风格, primary为主色风格
  *      close 是否点击关闭,为false时点击不关闭对话框
  *    }
  *  @default
  *    {
  *      text: '确认',
- *      style: 'primary',
+ *      scheme: 'primary',
  *      close: true
  *    }
  * @prop {Array} extButtons 拓展按钮列表
  *  @member {Object}
  *    {
  *      text 按钮文案,
- *      style 按钮风格, primary为主色风格
+ *      scheme 按钮风格, primary为主色风格
  *      close 是否点击关闭,为false时点击不关闭对话框
  *    }
  * @emits click 按钮点击事件，返回被点击按钮全部属性
@@ -66,7 +66,7 @@ const component = {
       default() {
         return [{
           text: '确认',
-          style: 'primary',
+          scheme: 'primary',
           close: true
         }]
       }
@@ -123,10 +123,10 @@ const component = {
           </slot>
           <slot name="buttons">
             <div class="vuti-dialog-buttons">
-              <div v-for="(item, index) in buttons" @click="click(item)" class="vuti-dialog-button" :class="'vuti-dialog-button-' + item.style">{{item.text}}</div>
+              <div v-for="(item, index) in buttons" @click="click(item)" class="vuti-dialog-button" :scheme="item.scheme">{{item.text}}</div>
             </div>
             <div class="vuti-dialog-buttons vuti-dialog-extends" v-for="(item, index) in extButtons">
-              <div @click="click(item)" class="vuti-dialog-button" :class="'vuti-dialog-button-' + item.style">{{item.text}}</div>
+              <div @click="click(item)" class="vuti-dialog-button" :scheme="item.scheme">{{item.text}}</div>
             </div>
           </slot>
         </div>

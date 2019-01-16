@@ -1,5 +1,5 @@
 .vuti{
-  line-height: 5.6vmin;
+  line-height: calc(5.6vmin/var(--size));
 }
 .vuti-border-top{
   position: relative;

@@ -48,7 +48,7 @@ const component = {
     },
     loadTypeTop: {
       type: String,
-      default: 'doubleRing'
+      default: 'ios'
     },
     loadTypeBottom: {
       type: String,
@@ -96,7 +96,10 @@ const component = {
       this.scroll.refresh()
       this.scroll.enable()
     },
-    _onScroll() {
+    _onScroll(e) {
+      if (this.$listeners.scroll) {
+        this.$emit('scroll', e)
+      }
       if (this.scroll.y > this.pullDownOffset && !this.onPulling && this.hasPullDown) {
         this.onPulling = true
         this.scroll.disable()

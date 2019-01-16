@@ -3,7 +3,7 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  height: calc(81vw + var(--size-cell-height));
+  height: calc((81vmin + var(--size-cell-height))/var(--size));
   background-color: var(--color-bg-t2);
   z-index: 101;
   overflow: hidden;

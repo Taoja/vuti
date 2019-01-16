@@ -29,6 +29,11 @@ import tToast from './src/toast/index.js'
 import tCellInput from './src/cellInput/index.js'
 import tSwitch from './src/switch/index.js'
 import tGroup from './src/group/index.js'
+import tBlock from './src/block/index.js'
+import tGrid from './src/grid/index.js'
+import tCarousel from './src/carousel/index.js'
+import tNotice from './src/notice/index.js'
+import tRow from './src/row/index.js'
 
 export {
   tButton,
@@ -46,5 +51,10 @@ export {
   tToast,
   tCellInput,
   tSwitch,
-  tGroup
+  tGroup,
+  tBlock,
+  tGrid,
+  tCarousel,
+  tNotice,
+  tRow
 }

@@ -1,0 +1,113 @@
+.vuti-notice-pic{
+  display: inline;
+}
+.vuti-notice{
+  min-height: calc(6vw/var(--size));
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 0px calc(4vw/var(--size));
+  background-color: white;
+}
+.vuti-notice-title{
+  margin-right: calc(3.2vw/var(--size));
+  font-size: var(--size-font-t3);
+  display: flex;
+  align-items: center;
+}
+.vuti-notice-title>span{
+  display: flex;
+  align-items: center;
+}
+.vuti-notice-body{
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+}
+.vuti-notice-item{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+}
+.vuti-notice-txt{
+  font-size: var(--size-font-t4);
+  overflow : hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.animated.faster {
+  -webkit-animation-duration: 500ms;
+  animation-duration: 500ms;
+}
+
+@-webkit-keyframes slideInUp {
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInUp {
+  -webkit-animation-name: slideInUp;
+  animation-name: slideInUp;
+}
+@-webkit-keyframes slideOutUp {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    visibility: hidden;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+}
+
+@keyframes slideOutUp {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    visibility: hidden;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+}
+
+.slideOutUp {
+  -webkit-animation-name: slideOutUp;
+  animation-name: slideOutUp;
+}
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}

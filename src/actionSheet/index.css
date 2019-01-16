@@ -11,12 +11,15 @@
 }
 .vuti-as-btn{
   color: var(--color-font-t1);
+  cursor: pointer;
 }
 .vuti-as-cancel{
   color: var(--color-t1);
   margin-top: var(--size-margin-t5);
+  cursor: pointer;
 }
 .vuti-as-title{
+  text-align: center;
   background-color: var(--color-bg-t2);
   color: var(--color-t2);
   font-size: var(--size-font-t3);

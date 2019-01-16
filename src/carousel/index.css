@@ -1,0 +1,17 @@
+.vuti-carousel-item>img{
+  display: block;
+  width: 100%;
+}
+.vuti-carousel-scale .vuti-carousel-item {
+  transform: scale(0.9);
+}
+.vuti-carousel-scale .swiper-slide-prev{
+  transform: scale(0.85) translateX(12%);
+  -webkit-transform: scale(0.85) translateX(12%);
+  -moz-transform: scale(0.85) translateX(12%);
+  -ms-transform: scale(0.85) translateX(12%);
+  -o-transform: scale(0.85) translateX(12%);
+}
+.vuti-carousel-scale .swiper-slide-next{
+  transform: scale(0.85) translateX(-12%);
+}

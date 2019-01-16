@@ -4,7 +4,6 @@ import tMask from '../mask/index.js'
  * 底部弹窗组件tPopup
  * @author 黄武韬<346792184@qq.com>
  * @prop {Boolean} visibility 组件开关 @default false
- * @prop {Boolean} tapHide 点击遮罩是否关闭弹窗 @default true
  * @prop {Boolean} autoHeight 是否自动高度，最低高度40vw @default false
  * @example
  * <t-popup v-model="popupSwitch" auto-height>123</t-popup>
@@ -18,14 +17,14 @@ const component = {
       type: Boolean,
       default: false
     },
-    tapHide: {
-      type: Boolean,
-      default: true
-    },
     autoHeight: {
       type: Boolean,
       default: false
     },
+    mask: {
+      type: Boolean,
+      default: true
+    }
   },
   methods: {
     hide() {
@@ -48,6 +47,7 @@ const component = {
     <div>
       <t-mask
         :visibility="visibility"
+        :mask="mask"
         @hide="hide"
         @click="maskClick"
         @show="show"

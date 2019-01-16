@@ -1,0 +1,12 @@
+.vuti-grid{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.vuti-grid-item>img{
+  width: 100%;
+  display: block;
+}
+.vuti-grid-item{
+  flex: 1;
+}

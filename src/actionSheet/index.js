@@ -14,6 +14,10 @@ const component = {
       type: Boolean,
       default: false
     },
+    mask: {
+      type: Boolean,
+      default: true
+    },
     tapHide: {
       type: Boolean,
       default: true
@@ -51,11 +55,12 @@ const component = {
     <t-popup
       :visibility="value"
       auto-height
+      :mask="mask"
       @maskClick="maskClick"
     >
       <div class="vuti vuti-as">
         <div class="vuti-as-title" v-if="title">{{title}}</div>
-        <div class="vuti-as-btn vuti-border-top" @click="submit(item)" :style="{'color': 'var(--color-'+item.color+')'}" v-for="(item, index) in buttons" :key="index">{{item.text}}</div>
+        <div class="vuti-as-btn vuti-border-top" @click="submit(item)" :style="{'color': item.color}" v-for="(item, index) in buttons" :key="index">{{item.text}}</div>
         <div class="vuti-as-cancel" @click="cancel">取消</div>
       </div>
     </t-popup>
