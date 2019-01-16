@@ -29,7 +29,7 @@ import tToast from './src/toast/index.js'
 import tCellInput from './src/cellInput/index.js'
 import tSwitch from './src/switch/index.js'
 import tGroup from './src/group/index.js'
-import tBlock from './src/block/index.js'
+import tSort from './src/sort/index.js'
 import tGrid from './src/grid/index.js'
 import tCarousel from './src/carousel/index.js'
 import tNotice from './src/notice/index.js'
@@ -52,7 +52,7 @@ export {
   tCellInput,
   tSwitch,
   tGroup,
-  tBlock,
+  tSort,
   tGrid,
   tCarousel,
   tNotice,

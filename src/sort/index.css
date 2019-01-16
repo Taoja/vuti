@@ -1,0 +1,9 @@
+.vuti-sort-bg{
+  opacity: .5;
+}
+.vuti-sort{
+  word-spacing:-1em;
+}
+.vuti-sort>*{
+  word-spacing:0;
+}
