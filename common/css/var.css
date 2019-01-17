@@ -64,7 +64,7 @@ body{
   --load-txt: #f1f1f1;
   --load-icon: #e5f4ff;
   
-  --size-picker-height: calc(9vmin/var(--size));
+  --size-picker-height: 34px;
 
   /** 
   * 边距

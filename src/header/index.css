@@ -1,5 +1,5 @@
 .vuti-header{
-  width: 100vmin;
+  width: 100%;
   height: var(--size-cell-height);
   display: flex;
   background-color: var(--color-bg-t2);
