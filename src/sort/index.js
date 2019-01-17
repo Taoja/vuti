@@ -1,17 +1,14 @@
 import './index.css'
 import Sortable from '../../common/js/sortable.js'
 /**
- * tCell表单块组件
+ * tSort托拉拽组件
  * @author 黄武韬<346792184@qq.com>
- * @prop {String} title 标题
- * @prop {String} tips 描述文字
- * @prop {Object} icon 标题栏图标
- *  @property {String} name 图标class名
- *  @property {String} color 图标颜色
- * @prop {Boolean} isLink 是否可以点击 @default false
- * @emits click 当isLink为true事的点击事件
+ * @prop {Array} data 传入的排序数组
+ * @prop {Number} delay 长按拖动延迟
+ * @prop {String} handle 定义拖动手柄样式名
+ * @emits result 返回拖动完成后排序数组
  * @example
- * <t-cell is-link title="标题标题" tip="说明文字/描述信息" :icon="{name: 'icon-QRcode',color: 'red'}">内容</t-cell>
+ * <t-sort @result="result" :data="data"><div v-for="(item, index) in data">item {{item}}</div></t-sort>
  */
 const component = {
   data() {
@@ -26,6 +23,14 @@ const component = {
       default() {
         return []
       }
+    },
+    delay: {
+      type: Number,
+      default: 150
+    },
+    handle: {
+      type: String,
+      default: ''
     }
   },
   mounted() {
@@ -33,7 +38,9 @@ const component = {
     this.sort = new Sortable(this.$refs.vutiSort, {
       animation: 150,
       ghostClass: 'vuti-sort-bg',
-      onEnd: this.end
+      onEnd: this.end,
+      delay: this.delay,
+      handle: this.handle
     })
   },
   methods: {
