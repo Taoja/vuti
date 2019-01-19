@@ -23,7 +23,8 @@ const component = {
           delay: 2000,
         },
         navigation: false,
-      }
+      },
+      loaded: 0
     }
   },
   props: {
@@ -42,19 +43,30 @@ const component = {
       clickable: true
     }
     let options = Object.assign(this.config, this.options)
-    console.log(options)
     this.swiper = new Swiper(`.vuti-carousel${this.paginationClass}`, options)
   },
   methods: {
     click (e) {
       this.$emit('click', e)
+    },
+    load() {
+      this.loaded++
+      if (this.loaded >= this.data.length) {
+        this.$emit('loadend')
+      }
+    },
+    fail() {
+      this.loaded++
+      if (this.loaded >= this.data.length) {
+        this.$emit('loadend')
+      }
     }
   },
   template: `
     <div class="vuti-carousel swiper-container vuti" :class="'vuti-carousel-' + options.type + ' vuti-carousel' + paginationClass">
       <div class="vuti-carousel-wrapper swiper-wrapper">
         <div class="vuti-carousel-item swiper-slide" v-for="(item, index) in data" :key="index" @click="click(item)">
-          <img :src="item.src">
+          <img :src="item.src" @load="load" @error="fail">
         </div>
       </div>
       <div v-if="options.navigation" class="swiper-button-prev"></div><!--左箭头-->

@@ -26,3 +26,10 @@
   width: 30px;
   height: 30px;
 }
+.vuti-scroll-nomore{
+  height: var(--size-cell-height);
+  line-height: var(--size-cell-height);
+  text-align: center;
+  font-size: var(--size-font-t4);
+  color: var(--color-font-t2);
+}

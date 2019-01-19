@@ -9,6 +9,8 @@ import iscroll from '../../common/js/iscroll.js'
  * @prop {Object} options iscroll参数 @default {scrollbars:false}
  * @prop {String} loadTypeTop 下拉刷新loading样式 @default doubleRing
  * @prop {String} loadTypeBottom 上拉加载loading样式 @default ios
+ * @prop {String} noMore 上拉加载没有更多开关 @default false
+ * @prop {String} noMoreText 上拉加载没有更多提示文案 @default 没有更多了
  * @emits pullDown 下拉刷新绑定事件，如果绑定则可以下拉刷新
  * @emits pullUp 上拉加载绑定事件，如果绑定则可以上拉加载
  * @slot default 内容区域插槽
@@ -53,6 +55,14 @@ const component = {
     loadTypeBottom: {
       type: String,
       default: 'ios'
+    },
+    noMore: {
+      type: Boolean,
+      default: false
+    },
+    noMoreText: {
+      type: String,
+      default: '没有更多了'
     }
   },
   computed: {
@@ -84,7 +94,8 @@ const component = {
         <slot></slot>
         <div class="vuti-scroll-pullUp" v-if="hasPullUp">
           <slot name="pullUp">
-            <spinner class="vuti-scroll-svg" :type="loadTypeBottom"></spinner>
+            <spinner v-if="!noMore" class="vuti-scroll-svg" :type="loadTypeBottom"></spinner>
+            <div v-else class="vuti-scroll-nomore">{{noMoreText}}</div>
           </slot>
         </div>
       </div>
@@ -108,8 +119,10 @@ const component = {
       if (this.hasPullUp) {
         var offset = this.scroll.y - this.scroll.maxScrollY
         if (offset < this.pullUpOffset && !this.onPulling) {
-          this.onPulling = true
-          this.$emit('pullUp')
+          if (!this.noMore) {
+            this.onPulling = true
+            this.$emit('pullUp')
+          }
         }
       }
     },

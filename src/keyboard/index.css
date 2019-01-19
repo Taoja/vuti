@@ -1,0 +1,51 @@
+.vuti-keyboard {
+  text-align: center;
+  color: var(--color-font-t1);
+  display: flex;
+  width: 100%;
+  font-size: var(--size-font-t1);
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background: var(--color-bg-t2);
+  border-top: solid thin var(--color-divide);
+  border-left: solid thin var(--color-divide);
+  z-index: 101;
+}
+.vuti-keyboard-left{
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+}
+.vuti-keyboard-item{
+  width: 33.33%;
+  height: calc(15vmin/var(--size));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: solid thin var(--color-divide);
+  border-bottom: solid thin var(--color-divide);
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.vuti-keyboard-item>img{
+  width: 30%;
+}
+.vuti-keyboard-item2{
+  height: calc(15vmin/var(--size)*2);
+  width: 100%;
+}
+.vuti-keyboard-ok{
+  background-color: var(--color-t1);
+  color: white;
+}
+.vuti-keyboard-press{
+  background-color: var(--color-bg-t1);
+}
+.vuti-keyboard-ok.vuti-keyboard-press{
+  background-color: var(--color-t1);
+  opacity: .5;
+}
+.vuti-keyboard-right{
+  width: 25%;
+}

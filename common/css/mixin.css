@@ -1,5 +1,6 @@
 .vuti{
   line-height: calc(5.6vmin/var(--size));
+  -webkit-tap-highlight-color: transparent;
 }
 .vuti-border-top{
   position: relative;

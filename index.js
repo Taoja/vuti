@@ -34,6 +34,9 @@ import tGrid from './src/grid/index.js'
 import tCarousel from './src/carousel/index.js'
 import tNotice from './src/notice/index.js'
 import tRow from './src/row/index.js'
+import tSearch from './src/search/index.js'
+import tGestures from './src/gestures/index.js'
+import tKeyboard from './src/keyboard/index.js'
 
 export {
   tButton,
@@ -56,5 +59,8 @@ export {
   tGrid,
   tCarousel,
   tNotice,
-  tRow
+  tRow,
+  tSearch,
+  tGestures,
+  tKeyboard
 }
