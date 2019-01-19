@@ -62,5 +62,3 @@ import { tCell, vPopup as tPopup } from 'vuti'
 + [源码](https://github.com/Taoja/vuti)
 + [issures](https://github.com/Taoja/vuti/issures)
 
-## .babelrc
-babel配置文件，更多配置信息[babel.js](https://github.com/babel/babel)
