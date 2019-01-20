@@ -15,7 +15,6 @@ const plugins = {
     toastPlugin(Vue)
   }
 }
-
 import tButton from './button/index.js'
 import tHeader from './header/index.js'
 import tPage from './page/index.js'
