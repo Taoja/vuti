@@ -11,13 +11,13 @@
     "datepicker",
     "header"
   ],
-  "main": "index.js",
+  "main": "dist/vuti.min.js",
   "bugs": {
     "url": "https://github.com/Taoja/vuti/issues",
     "email": "346792184@qq.com"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "node ./build/index.js"
   },
   "author": {
     "name": "黄武韬",
@@ -30,5 +30,25 @@
   "engines": {
     "node": ">=6.11.5"
   },
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.3.1",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^8.2.6",
+    "babel-helper-vue-jsx-merge-props": "^2.0.3",
+    "babel-loader": "^7.1.5",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "babel-plugin-syntax-jsx": "^6.18.0",
+    "babel-plugin-transform-vue-jsx": "^3.7.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-2": "^6.24.1",
+    "css-loader": "^1.0.0",
+    "postcss-loader": "^2.1.6",
+    "style-loader": "^0.21.0",
+    "url-loader": "^1.0.1",
+    "webpack": "^4.28.4",
+    "webpack-cli": "^3.2.1",
+    "iscroll": "^5.2.0",
+    "swiper": "^4.4.6"
+  }
 }

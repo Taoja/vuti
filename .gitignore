@@ -1,0 +1,14 @@
+.cache
+.DS_Store
+.cache
+node_modules/
+dist/
+example/
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
