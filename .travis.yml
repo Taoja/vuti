@@ -20,6 +20,6 @@ jobs:
       deploy:
         provider: releases
         skip_cleanup: true
-        file: dist/vue.min.js
+        file: dist/vuti.min.js
         api_key: 
           secure: "$github_TOKEN"
