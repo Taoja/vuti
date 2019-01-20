@@ -6,25 +6,26 @@ install:
 os:
  - linux
 
-script: npm run build
+script: 
+ - npm run build
+ - ls
 
 jobs:
   include:
+    - stage: github release
+      deploy:
+        provider: releases
+        skip_cleanup: true
+        file: dist/vuti.min.js
+        api_key: 
+          secure: "$github_TOKEN"
+        on:
+          tag: true
     - stage: npm release
       deploy:
         provider: npm
         email: "$EMAIL"
         api_key: "$TOKEN"
         skip_cleanup: true
-        on:
-          tag: true
-    - stage: github release
-      deploy:
-        provider: releases
-        skip_cleanup: true
-        file: dist/vuti.min.js
-        overwrite: true
-        api_key: 
-          secure: "$github_TOKEN"
         on:
           tag: true
