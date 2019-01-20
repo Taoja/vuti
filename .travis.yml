@@ -10,12 +10,13 @@ script: npm run build
 
 jobs:
   include:
-    - stage: npm and github release
+    - stage: npm release
       deploy:
         provider: npm
         email: "$EMAIL"
         api_key: "$TOKEN"
         skip_cleanup: true
+    - stage: github release
       deploy:
         provider: releases
         skip_cleanup: true
