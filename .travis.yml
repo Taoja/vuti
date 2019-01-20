@@ -7,4 +7,16 @@ os:
  - linux
 
 script:
- - echo '123'
+ - echo 'start auto build'
+
+ jobs:
+  include:
+    - stage: npm release
+      script: npm run build
+      deploy:
+        provider: npm
+        email: "$EMAIL"
+        api_key: "$TOKEN"
+        skip_cleanup: true
+        on:
+          tags: true
