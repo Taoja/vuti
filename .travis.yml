@@ -10,15 +10,15 @@ script: npm run build
 
 jobs:
   include:
-    - stage: npm release
+    - stage: npm and github release
       deploy:
         provider: npm
         email: "$EMAIL"
         api_key: "$TOKEN"
         skip_cleanup: true
-    - stage: github release
       deploy:
-        provider: release
+        provider: releases
         skip_cleanup: true
-        file: ./dist/vue.min.js
-        api_key: "$github_TOKEN"
+        file: dist/vue.min.js
+        api_key: 
+          secure: "$github_TOKEN"
