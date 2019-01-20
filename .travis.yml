@@ -18,5 +18,3 @@ jobs:
         email: "$EMAIL"
         api_key: "$TOKEN"
         skip_cleanup: true
-        on:
-          tags: true
