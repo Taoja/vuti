@@ -9,7 +9,7 @@ os:
 script:
  - echo 'start auto build'
 
- jobs:
+jobs:
   include:
     - stage: npm release
       script: npm run build
