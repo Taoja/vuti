@@ -16,10 +16,15 @@ jobs:
         email: "$EMAIL"
         api_key: "$TOKEN"
         skip_cleanup: true
+        on:
+          tag: true
     - stage: github release
       deploy:
         provider: releases
         skip_cleanup: true
         file: dist/vuti.min.js
+        overwrite: true
         api_key: 
           secure: "$github_TOKEN"
+        on:
+          tag: true
