@@ -6,13 +6,11 @@ install:
 os:
  - linux
 
-script:
- - echo 'start auto build'
+script: npm run build
 
 jobs:
   include:
     - stage: npm release
-      script: npm run build
       deploy:
         provider: npm
         email: "$EMAIL"
