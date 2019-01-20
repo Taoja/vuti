@@ -1,0 +1,11 @@
+language : node_js
+node_js:
+ - "10"
+ - "9"
+install:
+- npm install
+os:
+ - linux
+
+ script:
+ - echo '123'
