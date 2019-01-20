@@ -14,11 +14,9 @@ jobs:
   include:
     - stage: github release
       deploy:
-        provider: releases
+        provider: pages
         skip_cleanup: true
-        file: dist/vuti.min.js
-        api_key: 
-          secure: "$github_TOKEN"
+        github-token: "$github_TOKEN"
         on:
           branch: master
     - stage: npm release
