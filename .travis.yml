@@ -18,3 +18,9 @@ jobs:
         email: "$EMAIL"
         api_key: "$TOKEN"
         skip_cleanup: true
+    - stage: github release
+      deploy:
+        provider: release
+        skip_cleanup: true
+        file: ./dist/vue.min.js
+        api_key: "$github_TOKEN"

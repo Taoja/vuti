@@ -7,6 +7,9 @@
   <a href="https://www.npmjs.com/package/vuti"><img src="https://img.shields.io/npm/v/vuti.svg" alt="Version"></a>
   <a href="https://www.npmjs.com/package/vuti"><img src="https://img.shields.io/npm/l/vuti.svg" alt="License"></a>
 </p>
+<p align="center">
+  <img src="https://badgen.net/badge/platform/umd,browser/green?list=1" alt="platform">
+</p>
 vuti是一套基于vmin、var、calc等css3新特性的UI框架。通过变量复用、计算属性实现组件变量化。
 
 ## 特点
@@ -15,24 +18,30 @@ vuti是一套基于vmin、var、calc等css3新特性的UI框架。通过变量�
 + 插件化：组件事件、参数上升，注册时可自定义组件事件与参数。
 + 风格统一：组件通过一套规范化、变量化属性组成。
 
-## 安装
-
-```bash
-$ npm run install vuti --save
-```
-
 ## 使用
 
-在工程入口引入vuti
+### umd用法
+
+安装vuti依赖包
+```bash
+$ npm install vuti
+```
+
+在工程入口引入vuti或全局注册组件
 ```js
 import Vue from 'vue'
 import vuti from 'vuti'
-import { plugins } from 'vuti'
+import { plugins, tButton } from 'vuti'
 
 /** 
  * 可使用插件模式调用组件
  */
 Vue.use(plugins)
+
+/** 
+ * 全局注册组件
+ */
+Vue.component('tButton', tButton)
 
 /** 
  * vuti.set设置全局变量
@@ -54,6 +63,42 @@ import { tCell, vPopup as tPopup } from 'vuti'
     vPopup
   },
 ...
+```
+
+### browser用法
+
+在页面入口引入js库
+```html
+// 引入vue
+<script src="https://raw.githubusercontent.com/vuejs/vue/dev/dist/vue.min.js"></script>
+// 引入vuti
+<script src="https://raw.githubusercontent.com/Taoja/vuti/master/dist/vuti.min.js"></script>
+```
+
+通过Vue注册公共组件来使用
+
+```js
+let {plugins, tCell, tButton, ...} = Vuti
+
+Vue.use(plugins)
+
+Vue.component('tCell', tCell)
+Vue.component('tButton', tButton)
+new Vue({
+  ...
+})
+```
+注册Vue局部组件
+
+```js
+let {tCell, tButton, ...} = Vuti
+new Vue({
+  components: {
+    tCell,
+    tButton
+  },
+  ...
+})
 ```
 
 ## 文档与demo
