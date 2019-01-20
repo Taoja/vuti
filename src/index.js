@@ -40,8 +40,6 @@ import tSearch from './search/index.js'
 import tGestures from './gestures/index.js'
 import tKeyboard from './keyboard/index.js'
 
-console.log(tButton)
-
 export {
   tButton,
   tHeader,
