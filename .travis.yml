@@ -6,5 +6,5 @@ install:
 os:
  - linux
 
- script:
+script:
  - echo '123'
