@@ -20,7 +20,7 @@ jobs:
         api_key: 
           secure: "$github_TOKEN"
         on:
-          tag: true
+          branch: master
     - stage: npm release
       deploy:
         provider: npm
@@ -28,4 +28,4 @@ jobs:
         api_key: "$TOKEN"
         skip_cleanup: true
         on:
-          tag: true
+          branch: master
