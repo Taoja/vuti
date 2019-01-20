@@ -1,6 +1,6 @@
 import './index.css'
 import tScroll from '../scroll/index.js'
-import iscroll from 'iscroll'
+import iscroll from '../../common/js/iscroll.js'
 /**
  * 选择器picker
  * @author 黄武韬<346792184@qq.com>

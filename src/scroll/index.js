@@ -1,6 +1,6 @@
 import './index.css'
 import spinner from '../spinner/index.js'
-import iscroll from 'iscroll'
+import iscroll from '../../common/js/iscroll.js'
 /**
  * 滚动组件tScroll
  * @author 黄武韬<346792184@qq.com>
