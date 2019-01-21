@@ -9,7 +9,7 @@ os:
 script: 
  - npm run build
  - ls
- - git add dist/vuti.min.js
+ - git add dist/vuti.min.js -f
  - git commit -m "auto deploy"
  - git push -u origin master
 
