@@ -6,6 +6,8 @@
   <a href="https://npmcharts.com/compare/vuti?minimal=true"><img src="https://img.shields.io/npm/dm/vuti.svg" alt="Downloads"></a>
   <a href="https://www.npmjs.com/package/vuti"><img src="https://img.shields.io/npm/v/vuti.svg" alt="Version"></a>
   <a href="https://www.npmjs.com/package/vuti"><img src="https://img.shields.io/npm/l/vuti.svg" alt="License"></a>
+  <a href="https://packagephobia.now.sh/result?p=vuti"><img src="https://packagephobia.now.sh/badge?p=vuti" alt="install size"></a>
+  <a href="https://cdn.jsdelivr.net/npm/vuti@1/dist/vuti.min.js"><img src="https://data.jsdelivr.com/v1/package/npm/vuti/badge" alt="cdn"></a>
 </p>
 <p align="center">
   <img src="https://badgen.net/badge/platform/umd,browser/green?list=1" alt="platform">
@@ -72,7 +74,7 @@ import { tCell, vPopup as tPopup } from 'vuti'
 // 引入vue
 <script src="https://raw.githubusercontent.com/vuejs/vue/dev/dist/vue.min.js"></script>
 // 引入vuti
-<script src="https://raw.githubusercontent.com/Taoja/vuti/master/dist/vuti.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vuti@1/dist/vuti.min.js"></script>
 ```
 
 通过Vue注册公共组件来使用
