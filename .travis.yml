@@ -20,10 +20,10 @@ jobs:
           file: dist/vuti.min.js
           skip_cleanup: true
           on:
-            branch: master
+            tags: true
         - provider: npm
           email: "$EMAIL"
           api_key: "$TOKEN"
           skip_cleanup: true
           on:
-            branch: master
+            tags: true
