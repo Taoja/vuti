@@ -15,9 +15,15 @@ jobs:
     - stage: npm release
       if: tag =~ /v+([1-9]\d|[1-9])(\.([1-9]\d|\d)){2}$/
       deploy:
+        - provider: releases
+          api_key: "$github_TOKEN"
+          file: dist/vuti.min.js
+          skip_cleanup: true
+          on:
+            branch: master
         - provider: npm
           email: "$EMAIL"
           api_key: "$TOKEN"
           skip_cleanup: true
           on:
-            tag: true
+            branch: master
