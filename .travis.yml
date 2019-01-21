@@ -19,7 +19,11 @@ jobs:
           api_key: "$github_TOKEN"
           file: dist/vuti.min.js
           skip_cleanup: true
+          on:
+            tag: true
         - provider: npm
           email: "$EMAIL"
           api_key: "$TOKEN"
           skip_cleanup: true
+          on:
+            tag: true
