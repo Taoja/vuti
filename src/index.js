@@ -2,7 +2,7 @@
 
 import '../common/css/var.css'
 import '../common/css/mixin.css'
-import '../common/css/iconfont.css'
+// import '../common/css/iconfont.css'
 window.$mask = []
 
 import {install as dialogPlugin} from './dialog/index.js'

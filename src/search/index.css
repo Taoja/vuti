@@ -22,11 +22,16 @@
   margin-right: calc(2.134vmin/var(--size));
   color: #ddd;
   font-size: 1.2em;
+  display: flex;
+  align-items: center;
   transition: all .3s;
   -webkit-transition: all .3s;
   -moz-transition: all .3s;
   -ms-transition: all .3s;
   -o-transition: all .3s;
+}
+.vuti-search-icon>img{
+  width: 1em;
 }
 .vuti-search-focus{
   width: 1em;

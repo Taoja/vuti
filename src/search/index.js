@@ -20,7 +20,8 @@ const component = {
       sort: '',
       list: [],
       onfocus: false,
-      src: require('../../common/image/close.png')
+      src: require('../../common/image/close.png'),
+      src2: require('../../common/image/search.png')
     }
   },
   props: {
@@ -82,7 +83,9 @@ const component = {
   template: `
     <div class="vuti vuti-search">
       <div class="vuti-search-area">
-        <div class="icon-search vuti-search-icon" :class="{'vuti-search-focus': onfocus}" @click="searchClick"></div>
+        <div class="vuti-search-icon" :class="{'vuti-search-focus': onfocus}" @click="searchClick">
+          <img :src="src2"/>
+        </div>
         <div class="vuti-search-body">
           <input ref="input" :type="type" :maxlength="maxlength" @focus="focus" @blur="blur" v-model="value" @change="change" @input="input" class="vuti-search-input" :placeholder="placeholder"/>
         </div>
