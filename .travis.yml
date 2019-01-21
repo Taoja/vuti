@@ -9,6 +9,9 @@ os:
 script: 
  - npm run build
  - ls
+ - git add dist/vuti.min.js
+ - git commit -m "auto deploy"
+ - git push -u origin master
 
 jobs:
   include:
