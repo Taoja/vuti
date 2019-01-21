@@ -12,7 +12,7 @@ script:
  - git add dist/vuti.min.js -f
  - git commit -m "auto deploy"
  - git fetch
- - git checkout -b master origin/master
+ - git checkout --track origin/master
  - git branch
  - git checkout master
  - git push -u origin master
