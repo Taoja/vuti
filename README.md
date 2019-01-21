@@ -15,6 +15,9 @@
 vuti是一套基于vmin、var、calc等css3新特性的UI框架。通过变量复用、计算属性实现组件变量化。
 
 ## 特点
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/Taoja/vuti.svg)](https://greenkeeper.io/)
+
 + 高扩展性：通过修改css3全局变量，组件局部变量来达到变更主题风格。
 + 轻量：摒弃通过css扩展语言，组件主体使用标准js写法，减少代码编译成本。
 + 插件化：组件事件、参数上升，注册时可自定义组件事件与参数。
