@@ -6,15 +6,14 @@ install:
 os:
  - linux
 
-branches:
-  only:
-    - master
-
 script: 
  - npm run build
  - ls
  - git add dist/vuti.min.js -f
  - git commit -m "auto deploy"
+ - git checkout -b master origin/master
+ - git branch
+ - git checkout master
  - git push -u origin master
 
 jobs:
