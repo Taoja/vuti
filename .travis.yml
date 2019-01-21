@@ -12,7 +12,7 @@ script:
 
 jobs:
   include:
-    if: tag =~ 123
+    if: tag =~ /v+([1-9]\d|[1-9])(\.([1-9]\d|\d)){2}$/
       - stage: npm release
         deploy:
           provider: npm
