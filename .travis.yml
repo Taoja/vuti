@@ -6,6 +6,10 @@ install:
 os:
  - linux
 
+script: 
+ - npm run build
+ - ls
+
 jobs:
   include:
     - stage: npm release
