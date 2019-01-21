@@ -6,10 +6,6 @@ install:
 os:
  - linux
 
-branches:
-  only:
-    - master
-    
 script: 
  - npm run build
  - ls
