@@ -12,8 +12,8 @@ script:
 
 jobs:
   include:
-    if: tag =~ /v+([1-9]\d|[1-9])(\.([1-9]\d|\d)){2}$/
-      - stage: npm release
+    - stage: npm release
+      if: tag =~ /v+([1-9]\d|[1-9])(\.([1-9]\d|\d)){2}$/
         deploy:
           provider: npm
           email: "$EMAIL"
