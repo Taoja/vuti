@@ -19,3 +19,5 @@ jobs:
           email: "$EMAIL"
           api_key: "$TOKEN"
           skip_cleanup: true
+          on:
+            tag: true
