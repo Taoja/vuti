@@ -5,6 +5,8 @@
   <a href="https://travis-ci.org/Taoja/vuti"><img src="https://travis-ci.org/Taoja/vuti.svg?branch=master" alt="autobuild"></a>
   <a href="https://npmcharts.com/compare/vuti?minimal=true"><img src="https://img.shields.io/npm/dm/vuti.svg" alt="Downloads"></a>
   <a href="https://www.npmjs.com/package/vuti"><img src="https://img.shields.io/npm/v/vuti.svg" alt="Version"></a>
+  <a href="https://github.com/taoja/vuti/releases"><img src="https://img.shields.io/github/release/taoja/vuti.svg" alt="Version"></a>
+  <a href="https://github.com/taoja/vuti/issues"><img src="https://img.shields.io/github/issues/taoja/vuti.svg" alt="issues"></a>
   <a href="https://www.npmjs.com/package/vuti"><img src="https://img.shields.io/npm/l/vuti.svg" alt="License"></a>
   <a href="https://packagephobia.now.sh/result?p=vuti"><img src="https://packagephobia.now.sh/badge?p=vuti" alt="install size"></a>
   <a href="https://cdn.jsdelivr.net/npm/vuti@1/dist/vuti.min.js"><img src="https://data.jsdelivr.com/v1/package/npm/vuti/badge" alt="cdn"></a>
