@@ -1,6 +1,6 @@
 import './index.css'
 import '../../common/css/swiper-4.4.1.min.css'
-import Swiper from '../../common/js/iscroll.js'
+import Swiper from '../../common/js/swiper-4.4.1.min.js'
 /**
  * 宫格组件grid
  * @author 黄武韬<346792184@qq.com>
