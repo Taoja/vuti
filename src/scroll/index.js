@@ -44,7 +44,8 @@ const component = {
       type: Object,
       default() {
         return {
-          scrollbars: false
+          scrollbars: false,
+          click: true
         }
       }
     },
