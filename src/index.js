@@ -37,8 +37,6 @@ import tRow from './row/index.js'
 import tSearch from './search/index.js'
 import tGestures from './gestures/index.js'
 import tKeyboard from './keyboard/index.js'
-import tDate from 'vue2-datepicker'
-import tCalendar from 'vue2-datepicker/src/calendar.vue'
 
 export {
   tButton,
@@ -65,6 +63,4 @@ export {
   tSearch,
   tGestures,
   tKeyboard,
-  tDate,
-  tCalendar
 }

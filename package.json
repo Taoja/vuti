@@ -1,6 +1,6 @@
 {
   "name": "vuti",
-  "version": "1.0.21",
+  "version": "1.0.22",
   "description": "高扩展性前端UI框架",
   "keywords": [
     "vuti",
@@ -49,8 +49,5 @@
     "url-loader": "^1.0.1",
     "webpack": "^4.28.4",
     "webpack-cli": "^3.2.1"
-  },
-  "dependencies": {
-    "vue2-datepicker": "^2.8.1"
   }
 }
