@@ -9,21 +9,19 @@ os:
 script: 
  - npm run build
  - ls
- - $TRAVIS_TAG
- - $tag
- - versionID=`echo tag|sed 's/v//'`
- - $versionID
+ - versionID=`echo $TRAVIS_TAG|sed 's/v//'`
+ - npm version $versionID
 jobs:
   include:
     - stage: npm release
-      # if: tag =~ /v+([1-9]\d|[1-9])(\.([1-9]\d|\d)){2}$/
+      if: tag =~ /v+([1-9]\d|[1-9])(\.([1-9]\d|\d)){2}$/
       deploy:
-        # - provider: releases
-        #   api_key: "$github_TOKEN"
-        #   file: dist/vuti.min.js
-        #   skip_cleanup: true
-        #   on:
-        #     tags: true
+        - provider: releases
+          api_key: "$github_TOKEN"
+          file: dist/vuti.min.js
+          skip_cleanup: true
+          on:
+            tags: true
         - provider: npm
           email: "$EMAIL"
           api_key: "$TOKEN"
