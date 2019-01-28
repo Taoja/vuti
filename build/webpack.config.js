@@ -1,4 +1,5 @@
 const path = require('path')
+const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin')
 
 module.exports = {
   mode: 'production',
@@ -11,6 +12,9 @@ module.exports = {
     libraryTarget: 'umd',
     filename: 'vuti.min.js'
   },
+  plugins: [
+    new FriendlyErrorsWebpackPlugin()
+  ],
   module: {
     rules: [
       {
@@ -41,6 +45,7 @@ module.exports = {
       },
       {
         test: /\.js$/, //babel
+        exclude: /node_modules/,
         use: {
           loader: 'babel-loader'
         }
