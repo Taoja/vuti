@@ -12,7 +12,7 @@ script:
 jobs:
   include:
     - stage: npm release
-      # if: tag =~ /v+([1-9]\d|[1-9])(\.([1-9]\d|\d)){2}$/
+      if: tag =~ /v+([1-9]\d|[1-9])(\.([1-9]\d|\d)){2}$/
       deploy:
         - provider: releases
           api_key: "$github_TOKEN"
