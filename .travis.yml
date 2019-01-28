@@ -9,8 +9,6 @@ os:
 script: 
  - npm run build
  - ls
- - versionID=`echo $TRAVIS_TAG|sed 's/v//'`
- - npm version $versionID
 jobs:
   include:
     - stage: npm release
