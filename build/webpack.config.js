@@ -12,6 +12,9 @@ module.exports = {
     libraryTarget: 'umd',
     filename: 'vuti.min.js'
   },
+  performance: {
+    hints: false
+  },
   plugins: [
     new FriendlyErrorsWebpackPlugin()
   ],

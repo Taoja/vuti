@@ -9,7 +9,10 @@ os:
 script: 
  - npm run build
  - ls
-
+ - tag
+ - $tag
+ - versionID=`echo tag|sed 's/v//'`
+ - $versionID
 jobs:
   include:
     - stage: npm release
