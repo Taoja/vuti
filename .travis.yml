@@ -9,7 +9,7 @@ os:
 script: 
  - npm run build
  - ls
- - tag
+ - $TRAVIS_TAG
  - $tag
  - versionID=`echo tag|sed 's/v//'`
  - $versionID
