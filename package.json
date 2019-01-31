@@ -1,5 +1,6 @@
 {
   "name": "vuti",
+  "sideEffects": false,
   "version": "1.0.24",
   "description": "高扩展性前端UI框架",
   "keywords": [
@@ -11,7 +12,7 @@
     "datepicker",
     "header"
   ],
-  "main": "dist/vuti.min.js",
+  "main": "src/index.js",
   "bugs": {
     "url": "https://github.com/Taoja/vuti/issues",
     "email": "346792184@qq.com"
@@ -33,18 +34,13 @@
   },
   "license": "MIT",
   "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
     "autoprefixer": "^9.3.1",
-    "babel-core": "^6.26.3",
-    "babel-eslint": "^10.0.1",
-    "babel-helper-vue-jsx-merge-props": "^2.0.3",
-    "friendly-errors-webpack-plugin": "^1.7.0",
-    "babel-loader": "^7.1.5",
-    "babel-plugin-syntax-dynamic-import": "^6.18.0",
-    "babel-plugin-syntax-jsx": "^6.18.0",
-    "babel-plugin-transform-vue-jsx": "^3.7.0",
-    "babel-preset-env": "^1.7.0",
+    "babel-loader": "^8.0.5",
     "babel-preset-stage-2": "^6.24.1",
     "css-loader": "^2.1.0",
+    "friendly-errors-webpack-plugin": "^1.7.0",
     "postcss-loader": "^3.0.0",
     "style-loader": "^0.23.1",
     "url-loader": "^1.0.1",
