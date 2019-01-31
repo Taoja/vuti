@@ -12,7 +12,8 @@
     "datepicker",
     "header"
   ],
-  "main": "src/index.js",
+  "main": "dist/vuti.min.js",
+  "module": "src/index.js",
   "bugs": {
     "url": "https://github.com/Taoja/vuti/issues",
     "email": "346792184@qq.com"
