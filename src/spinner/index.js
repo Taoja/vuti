@@ -1,3 +1,4 @@
+import iosSrc from '../../common/svg/ios.svg'
 /**
  * spinner加载器
  * @author 黄武韬<346792184@qq.com>
@@ -14,7 +15,7 @@ const component = {
   },
   computed: {
     spinner() {
-      return require(`../../common/svg/${this.type}.svg`)
+      return iosSrc
     }
   },
   template: `

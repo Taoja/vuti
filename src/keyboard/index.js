@@ -1,4 +1,6 @@
 import './index.css'
+import hideSrc from '../../common/image/hidekeyboard.png'
+import backSrc from '../../common/image/backspace.png'
 /**
  * tKeyboard 键盘组件
  * @author 黄武韬<346792184@qq.com>
@@ -16,8 +18,8 @@ import './index.css'
 const component = {
   data() {
     return {
-      hidesrc: require('../../common/image/hidekeyboard.png'),
-      backsrc: require('../../common/image/backspace.png'),
+      hidesrc: hideSrc,
+      backsrc: backSrc,
       target: ''
     }
   },

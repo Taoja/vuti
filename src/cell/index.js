@@ -1,4 +1,5 @@
 import './index.css'
+import isLinkSrc from '../../common/image/isLink.png'
 /**
  * tCell表单块组件
  * @author 黄武韬<346792184@qq.com>
@@ -16,7 +17,7 @@ const component = {
   data() {
     return {
       press: false,
-      src: require('../../common/image/isLink.png')
+      src: isLinkSrc
     }
   },
   props: {

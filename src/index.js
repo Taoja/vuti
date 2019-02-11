@@ -1,7 +1,7 @@
 
 import '../common/css/var.css'
 import '../common/css/mixin.css'
-// import '../common/css/iconfont.css'
+import '../common/css/iconfont.css'
 window.$mask = []
 
 import {install as dialogPlugin} from './dialog/index.js'
@@ -31,7 +31,7 @@ import tSwitch from './switch/index.js'
 import tGroup from './group/index.js'
 import tSort from './sort/index.js'
 import tGrid from './grid/index.js'
-import tCarousel from './carousel/index.js'
+// import tCarousel from './carousel/index.js'
 import tNotice from './notice/index.js'
 import tRow from './row/index.js'
 import tSearch from './search/index.js'
@@ -57,7 +57,7 @@ export {
   tGroup,
   tSort,
   tGrid,
-  tCarousel,
+  // tCarousel,
   tNotice,
   tRow,
   tSearch,

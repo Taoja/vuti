@@ -1,5 +1,6 @@
 import tCell from '../cell/index.js'
 import './index.css'
+import isLinkSrc from '../../common/image/isLink.png'
 /**
  * tCellInput表单输入栏
  * @author 黄武韬<346792184@qq.com>
@@ -26,7 +27,7 @@ const component = {
   data() {
     return {
       press: false,
-      src: require('../../common/image/isLink.png')
+      src: isLinkSrc
     }
   },
   props: {

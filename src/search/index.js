@@ -1,4 +1,6 @@
 import './index.css'
+import closeSrc from '../../common/image/close.png'
+import searchSrc from '../../common/image/search.png'
 /**
  * tSearch搜索栏组件
  * @author 黄武韬<346792184@qq.com>
@@ -20,8 +22,8 @@ const component = {
       sort: '',
       list: [],
       onfocus: false,
-      src: require('../../common/image/close.png'),
-      src2: require('../../common/image/search.png')
+      src: closeSrc,
+      src2: searchSrc
     }
   },
   props: {

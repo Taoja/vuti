@@ -7,7 +7,9 @@ os:
  - linux
 
 script: 
- - npm run build
+ - npm run es
+ - ls
+ - npm run cjs
  - ls
 jobs:
   include:
@@ -16,7 +18,7 @@ jobs:
       deploy:
         - provider: releases
           api_key: "$github_TOKEN"
-          file: dist/vuti.min.js
+          file: dist/vuti.cjs.js
           skip_cleanup: true
           on:
             tags: true

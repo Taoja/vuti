@@ -35,7 +35,7 @@ const component = {
   },
   mounted() {
     this.list = [].concat(this.data)
-    this.sort = new Sortable(this.$refs.vutiSort, {
+    this.sort = new (Sortable())(this.$refs.vutiSort, {
       animation: 150,
       ghostClass: 'vuti-sort-bg',
       onEnd: this.end,

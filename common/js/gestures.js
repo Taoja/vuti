@@ -1,4 +1,3 @@
-var a = (function () {
 
 	function GestureUnlocker(options) {
 			this.sideLength = options.sideLength ? options.sideLength : 0;
@@ -249,7 +248,4 @@ var a = (function () {
 			}
 	}
 
-	return GestureUnlocker;
-})();
-
-export default a
+export default GestureUnlocker
