@@ -23,7 +23,7 @@
   "homepage": "https://taoja.github.io/vuti",
   "scripts": {
     "es": "node ./build/rollup.js es",
-    "cjs": "node ./build/rollup.js cjs"
+    "umd": "node ./build/rollup.js umd"
   },
   "author": {
     "name": "黄武韬",
@@ -38,10 +38,16 @@
   },
   "license": "MIT",
   "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-preset-env": "^1.7.0",
     "rollup": "^1.1.2",
+    "rollup-plugin-babel": "^3.0.7",
     "rollup-plugin-commonjs": "^9.2.0",
     "rollup-plugin-node-resolve": "^4.0.0",
     "rollup-plugin-postcss": "^2.0.3",
+    "rollup-plugin-uglify": "^6.0.2",
+    "rollup-plugin-uglify-es": "^0.0.1",
     "rollup-plugin-url": "^2.2.0"
   }
 }
