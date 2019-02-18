@@ -11,9 +11,6 @@
   <a href="https://packagephobia.now.sh/result?p=vuti"><img src="https://packagephobia.now.sh/badge?p=vuti" alt="install size"></a>
   <a href="https://cdn.jsdelivr.net/npm/vuti@1/dist/vuti.min.js"><img src="https://data.jsdelivr.com/v1/package/npm/vuti/badge" alt="cdn"></a>
 </p>
-<p align="center">
-  <img src="https://badgen.net/badge/platform/ES5,browser/green?list=1" alt="platform">
-</p>
 vuti是一套基于vmin、var、calc等css3新特性的UI框架。通过变量复用、计算属性实现组件变量化。
 
 ## 特点
@@ -30,7 +27,9 @@ vuti是一套基于vmin、var、calc等css3新特性的UI框架。通过变量�
 
 ## 使用
 
-### ES5用法
+[![support](https://badgen.net/badge/support/ES,UMD/green?list=1)](https://taoja.github.io/vuti)
+
+### es6用法
 
 安装vuti依赖包
 ```bash
@@ -62,7 +61,7 @@ vuti.set({
 })
 ```
 
-在页面引入vuti
+局部注册vuti组件
 
 ```js
 import { tCell, vPopup as tPopup } from 'vuti'
