@@ -49,6 +49,6 @@
     "rollup-plugin-postcss": "^2.0.3",
     "rollup-plugin-uglify": "^6.0.2",
     "rollup-plugin-uglify-es": "^0.0.1",
-    "rollup-plugin-url": "^2.2.0"
+    "rollup-plugin-url": "^2.2.1"
   }
 }
