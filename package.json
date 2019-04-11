@@ -45,7 +45,7 @@
     "rollup-plugin-babel": "^3.0.7",
     "rollup-plugin-commonjs": "^9.2.0",
     "rollup-plugin-license": "^0.8.1",
-    "rollup-plugin-node-resolve": "^4.0.0",
+    "rollup-plugin-node-resolve": "^4.2.3",
     "rollup-plugin-postcss": "^2.0.3",
     "rollup-plugin-uglify": "^6.0.2",
     "rollup-plugin-uglify-es": "^0.0.1",
