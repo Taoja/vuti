@@ -3,7 +3,7 @@
   "sideEffects": [
     "*.css"
   ],
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "高扩展性前端UI框架",
   "keywords": [
     "vuti",
