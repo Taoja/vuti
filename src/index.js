@@ -38,6 +38,26 @@ import tSearch from './search/index.js'
 import tGestures from './gestures/index.js'
 import tKeyboard from './keyboard/index.js'
 
+class Set {
+  constructor() {
+    var styleEl = document.createElement('style')
+    document.head.appendChild(styleEl)
+    this.styleSheet = styleEl.sheet
+  }
+  set(obj = {}) {
+    var str = '{'
+    for(let i in obj) {
+      str = str + `${i}: ${obj[i]};`
+    }
+    str = str + '}'
+    this.styleSheet.insertRule(`
+      body>div ${str}
+    `)
+  }
+}
+
+const set = new Set()
+
 export {
   tButton,
   tHeader,
@@ -63,4 +83,5 @@ export {
   tSearch,
   tGestures,
   tKeyboard,
+  set
 }

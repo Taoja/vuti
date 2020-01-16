@@ -79,4 +79,6 @@ body{
   /* 块间距 */
   --size-margin-t5: calc(2.667vmin/var(--size));
   --size-margin-t6: calc(2.4vmin/var(--size));
+
+  --dialog-radio: 8px;
 }

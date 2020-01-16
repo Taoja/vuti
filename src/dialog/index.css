@@ -9,11 +9,11 @@
   bottom: 0;
   margin: auto;
   z-index: 101;
-  border-radius: 2px;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  -ms-border-radius: 2px;
-  -o-border-radius: 2px;
+  border-radius: var(--dialog-radio);
+  -webkit-border-radius: var(--dialog-radio);
+  -moz-border-radius: var(--dialog-radio);
+  -ms-border-radius: var(--dialog-radio);
+  -o-border-radius: var(--dialog-radio);
   box-shadow: var(--shadow-nav);
 }
 .vuti-dialog-image{
